@@ -1,2 +1,2 @@
 # mern-blog
-Blog using MERN Tech Stack
+Blog built with MERN (MongoDB, ExpressJS, ReactJS, and NodeJS) Stack
