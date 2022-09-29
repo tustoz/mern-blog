@@ -32,26 +32,10 @@ const Header = () => (
       </div>
       <div className="top-center">
         <ul className="top-list">
-          <li className="top-list-item">
-            <Link className="link" to="/">
-              HOME
-            </Link>
-          </li>
-          <li className="top-list-item">
-            <Link className="link" to="/about">
-              ABOUT
-            </Link>
-          </li>
-          <li className="top-list-item">
-            <Link className="link" to="/contact">
-              CONTACT
-            </Link>
-          </li>
-          <li className="top-list-item">
-            <Link className="link" to="/write">
-              WRITE
-            </Link>
-          </li>
+          <li className="top-list-item">HOME</li>
+          <li className="top-list-item">ABOUT</li>
+          <li className="top-list-item">CONTACT</li>
+          <li className="top-list-item">WRITE</li>
           <li className="top-list-item">LOGOUT</li>
         </ul>
       </div>
@@ -59,7 +43,7 @@ const Header = () => (
         <Link className="link" to="/settings">
           <img
             className="top-image"
-            src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            src="https://avatars.githubusercontent.com/u/76657906?v=4"
             alt=""
           />
         </Link>

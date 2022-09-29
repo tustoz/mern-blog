@@ -47,18 +47,29 @@
   align-items: center;
 }
 
+.blogItem-author h6 {
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+}
+
 .blogItem-author img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 0.5rem;
 }
 
 .blogItem-author p {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   color: #a9a9a9;
   font-weight: 600;
+}
+
+.tags {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .chip {
@@ -69,4 +80,5 @@
   border-radius: 5px;
   width: fit-content;
   text-transform: capitalize;
+  margin-right: 5px;
 }

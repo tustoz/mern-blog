@@ -28,10 +28,17 @@ const Blog = () => {
       {blog ? (
         <div className="blog-wrap">
           <header>
-            <p className="blog-date">Published {new Date(blog.createdAt).toDateString()}</p>
+            <p className="blog-date">
+              Published {new Date(blog.createdAt).toDateString()}
+            </p>
             <h1>{blog.title}</h1>
           </header>
           <img src={blog.photo} alt="cover" />
+          <ul className="tags">
+            {blog.categories.map((c) => (
+              <p className="chip">{c}</p>
+            ))}
+          </ul>
           <p className="blog-desc">{blog.description}</p>
         </div>
       ) : (

@@ -16,17 +16,17 @@ const BlogItem = ({
 }) => {
   return (
     <div className="blogItem-wrap">
-      <img
-        className="blogItem-cover"
-        src={photo}
-        alt=""
-      />
-      {categories.map(c => <p className='chip'>{c.name}</p>)}
+      <img className="blogItem-cover" src={photo} alt="" />
+      <ul className="tags">
+        {categories.map((c) => (
+          <p className="chip">{c}</p>
+        ))}
+      </ul>
       <h3>{title}</h3>
       <p className="blogItem-desc">{description}</p>
       <footer>
         <div className="blogItem-author">
-          <img src={profilepic} alt="avatar" />
+          <img src="https://avatars.githubusercontent.com/u/76657906?v=4" alt="" />
           <div>
             <h6>{username}</h6>
             <p>{new Date(createdAt).toDateString()}</p>
