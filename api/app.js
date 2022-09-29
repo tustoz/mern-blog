@@ -38,10 +38,10 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
   res.status(200).json("File has been uploaded");
 });
 
-app.use("/v1/auth", authRoutes);
-app.use("/v1/users", authUsers);
-app.use("/v1/blog", blogRoutes);
-app.use("/v1/category", categoryRoute);
+app.use("/api/auth", authRoutes);
+app.use("/api/users", authUsers);
+app.use("/api/blog", blogRoutes);
+app.use("/api/category", categoryRoute);
 
 app.use("/", (req, res) => {
   res.send("Server Running");
